@@ -24,7 +24,11 @@
         <activity android:name=".ukmdaily.UKMDailyActivity" />
         <activity android:name=".marketing.MarketingActivity" />
         <activity android:name=".marketing.EndorserDetailsActivity" />
-        <activity android:name=".pembukuan.PembukuanActivity"/>
+        <activity android:name=".pembukuan.PembukuanActivity" />
+        <activity android:name=".marketing.EndorserStatisticsActivity" />
+        <activity android:name=".pembukuan.PembukuanFormActivity" />
+        <activity android:name=".pembukuan.PembukuanReportActivity" />
+        <activity android:name=".ukmdaily.UKMDetailsActivity"></activity>
     </application>
 
 </manifest>

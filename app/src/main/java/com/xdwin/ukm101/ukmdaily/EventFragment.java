@@ -42,6 +42,9 @@ public class EventFragment extends Fragment {
             UKMDailyModel model = new UKMDailyModel();
             model.setTitle("Event: Gathering UKM Se-Depok");
             model.setExcerpt("Event gathering UKM Se-Depok akan diadakan pada Bulan Januari tahun 2015. Event ini akan diadakan di kota depok selama 3 hari...");
+            model.setImageURL("https://cdn4.iconfinder.com/data/icons/flat-icon-set/2133/flat_icons-graficheria.it-06.png");
+            model.setContent("Event gathering UKM Se-Depok akan diadakan pada Bulan Januari tahun 2015. Event ini akan diadakan di kota depok selama 3 hari...");
+            model.setId(1);
             events.add(model);
         }
         adapter = new UKMDailyLVAdapter(getContext(), events);

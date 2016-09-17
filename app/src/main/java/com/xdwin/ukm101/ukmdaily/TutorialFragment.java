@@ -42,6 +42,7 @@ public class TutorialFragment extends Fragment {
             UKMDailyModel model = new UKMDailyModel();
             model.setTitle("Tutorial: Cara membuat iklan yang menarik pada social media");
             model.setExcerpt("Pada zaman sekarang, semua orang telah mempunyai akun pada masing-masing sosial media. Tak lagi memandang status, baik ibu-ibu, anak-anak maupun orang dewasa...");
+            model.setImageURL("https://cdn1.iconfinder.com/data/icons/business-items/512/analytics_laptop_web_analysis_report_chart_data_stock_market_screen_business_management_information_statistics_flat_design_icon-512.png");
             tutorials.add(model);
         }
         adapter = new UKMDailyLVAdapter(getContext(), tutorials);

@@ -43,6 +43,7 @@ public class MarketingFragment extends Fragment {
             UKMDailyModel model = new UKMDailyModel();
             model.setTitle("Marketing: Memanfaatkan Google Analytics untuk menunjang traffic pada website");
             model.setExcerpt("Hampir setiap orang di kota kini mempunyai setidaknya satu buah smartphone. Hal ini tidak dapat dipungkiri karena pesatnya perkembangan jaman membuat setiap orang...");
+            model.setImageURL("http://www.freeiconspng.com/uploads/megaphone-message-news-promotion-speaker-icon--17.png");
             tutorials.add(model);
         }
         adapter = new UKMDailyLVAdapter(getContext(), tutorials);
