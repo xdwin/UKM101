@@ -1,11 +1,13 @@
 package com.xdwin.ukm101.ukmdaily;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.xdwin.ukm101.R;
@@ -33,6 +35,13 @@ public class MarketingFragment extends Fragment {
         tutorials = new ArrayList<>();
 
         setupMarketings();
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                startActivity(new Intent(getActivity(), UKMDetailsActivity.class));
+            }
+        });
 
         return view;
     }

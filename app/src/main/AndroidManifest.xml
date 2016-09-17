@@ -28,7 +28,9 @@
         <activity android:name=".marketing.EndorserStatisticsActivity" />
         <activity android:name=".pembukuan.PembukuanFormActivity" />
         <activity android:name=".pembukuan.PembukuanReportActivity" />
-        <activity android:name=".ukmdaily.UKMDetailsActivity"></activity>
+        <activity android:name=".ukmdaily.UKMDetailsActivity" />
+        <activity android:name=".miscellaneous.StatisticsActivity" />
+        <activity android:name=".miscellaneous.TrendsActivity"></activity>
     </application>
 
 </manifest>

@@ -7,8 +7,13 @@ import android.content.res.Resources;
 import android.net.Uri;
 import android.support.annotation.AnyRes;
 import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -16,6 +21,7 @@ import android.widget.TextView;
 
 import com.xdwin.ukm101.R;
 import com.xdwin.ukm101.marketing.MarketingActivity;
+import com.xdwin.ukm101.miscellaneous.StatisticsActivity;
 import com.xdwin.ukm101.pembukuan.PembukuanActivity;
 import com.xdwin.ukm101.ukmdaily.UKMDailyActivity;
 
@@ -27,11 +33,20 @@ public class HomeActivity extends AppCompatActivity {
     private HomeLVAdapter adapter;
     private ArrayList<HomeMenuModel> models;
 
+    private DrawerLayout drawerLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.home_activity_toolbar);
+        toolbar.setTitle("");
+        toolbar.setNavigationIcon(R.drawable.ic_action_home_light);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeButtonEnabled(true);
+
+        drawerLayout = (DrawerLayout) findViewById(R.id.home_activity_drawer_layout);
         listView = (ListView) findViewById(R.id.home_activity_list_view);
         models = new ArrayList<>();
 
@@ -57,6 +72,21 @@ public class HomeActivity extends AppCompatActivity {
                 }
             }
         });
+
+        NavigationView nav = (NavigationView) findViewById(R.id.home_activity_navigation_view);
+        if (nav != null) {
+            nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(MenuItem item) {
+                    int id = item.getItemId();
+                    if (id == R.id.navigation_item_insight){
+                        startActivity(new Intent(HomeActivity.this, StatisticsActivity.class));
+                        drawerLayout.closeDrawers();
+                    }
+                    return false;
+                }
+            });
+        }
 
     }
 
@@ -95,5 +125,16 @@ public class HomeActivity extends AppCompatActivity {
                 + '/' + res.getResourceEntryName(resId));
         /** return uri */
         return resUri.toString();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id){
+            case android.R.id.home:
+                drawerLayout.openDrawer(GravityCompat.START);
+                return true;
+        }
+        return false;
     }
 }
