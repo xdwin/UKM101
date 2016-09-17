@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/ukmdaily_item_fragment_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:contentDescription="@string/app_name"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="75">
+
+            <TextView
+                android:id="@+id/ukmdaily_item_fragment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:text="Event : Gathering UKM Se-Depok"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/ukmdaily_item_fragment_excerpt"
+                android:layout_below="@id/ukmdaily_item_fragment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:textAlignment="viewStart"
+                android:textSize="11sp"
+                android:text="Event gathering UKM Se-Depok akan diadakan pada Bulan Januari tahun 2015. Event ini akan diadakan di kota depok selama 3 hari..."/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

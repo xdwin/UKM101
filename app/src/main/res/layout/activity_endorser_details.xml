@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xdwin.ukm101.marketing.EndorserDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/endorser_details_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@string/empty_string">
+
+        <TextView
+            android:id="@+id/endorser_details_activity_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Endorser Details"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_below="@id/endorser_details_activity_toolbar"
+        android:id="@+id/endorser_details_activity_title_wrapper"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/endorser_details_activity_endorser_photo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/endorser_details_activity_endorser_name"
+            android:layout_toEndOf="@id/endorser_details_activity_endorser_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Komunitas Harley Davidson Indonesia"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_toEndOf="@id/endorser_details_activity_endorser_photo"
+            android:layout_below="@id/endorser_details_activity_endorser_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Statistics"
+            android:textSize="12sp"
+            android:padding="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <View
+            android:id="@+id/endorser_details_activity_endorser_divider"
+            android:layout_below="@id/endorser_details_activity_endorser_photo"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/endorser_details_activity_description_title"
+        android:layout_below="@id/endorser_details_activity_title_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/endorser_details_activity_description_content"
+        android:layout_below="@id/endorser_details_activity_description_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:text="Komunitas Harley Davidson Indonesia adalah komunitas perkumpulan penyuka sepeda motor bermerek Harley Davidson di Indonesia. Mereka seringkali mengadakan pertemuan/gathering bagi para anggotanya untuk mempererat tali silaturahmi"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/endorser_details_activity_channel_pemasaran_title"
+        android:layout_below="@id/endorser_details_activity_description_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Channel Pemasaran"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/endorser_details_activity_channel_pemasaran_content"
+        android:layout_below="@id/endorser_details_activity_channel_pemasaran_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LINE, Instagram, Whatsapp Group"
+        android:textSize="16sp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:id="@+id/endorser_details_activity_target_konsumen_title"
+        android:layout_below="@id/endorser_details_activity_channel_pemasaran_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Target Konsumen"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/endorser_details_activity_target_konsumen_content"
+        android:layout_below="@id/endorser_details_activity_target_konsumen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pemilik motor Harley Davidson, Semua orang yang mengikuti channel Komunitas Harley Davidson Indonesia, pemilik motor pada umumnya"
+        android:textSize="12sp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:id="@+id/endorser_details_activity_biaya_title"
+        android:layout_below="@id/endorser_details_activity_target_konsumen_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Biaya"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/endorser_details_activity_biaya_content"
+        android:layout_below="@id/endorser_details_activity_biaya_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 400.000 - Rp 800.000"
+        android:textSize="16sp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+    <Button
+        android:id="@+id/endorser_details_activity_bid_endorser_button"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bid Endorser"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+</RelativeLayout>

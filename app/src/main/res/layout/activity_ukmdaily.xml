@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xdwin.ukm101.ukmdaily.UKMDailyActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ukmdaily_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@string/empty_string">
+
+        <TextView
+            android:id="@+id/ukmdaily_activity_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UKM Daily"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/ukmdaily_activity_tab_layout"
+        android:layout_below="@id/ukmdaily_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabMode="fixed"
+        app:tabGravity="fill" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ukmdaily_activity_view_pager"
+        android:layout_below="@id/ukmdaily_activity_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+</RelativeLayout>

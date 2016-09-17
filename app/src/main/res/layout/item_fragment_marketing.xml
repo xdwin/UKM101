@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:weightSum="100">
+
+    <ImageView
+        android:id="@+id/marketing_item_fragment_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:contentDescription="@string/app_name"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="75">
+
+        <TextView
+            android:id="@+id/marketing_item_fragment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:text="Shandy Aulia"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/marketing_item_fragment_channel"
+            android:layout_below="@id/marketing_item_fragment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:text="Instagram, Line Official"
+            android:textColor="@color/secondaryText"/>
+
+        <TextView
+            android:id="@+id/marketing_item_fragment_price_range"
+            android:layout_below="@id/marketing_item_fragment_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:text="Rp 800.000 - Rp 1.000.000"
+            android:textColor="@color/secondaryText"/>
+    </RelativeLayout>
+
+</LinearLayout>

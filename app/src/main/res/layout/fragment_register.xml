@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.xdwin.ukm101.loginscreen.RegisterFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_fragment_textinput_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:id="@+id/register_fragment_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_fragment_textinput_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_fragment_textinput_email"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:id="@+id/register_fragment_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <ProgressBar
+            android:layout_below="@id/register_fragment_textinput_password"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:visibility="gone"
+            android:id="@+id/register_fragment_progress"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:indeterminate="true"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/register_fragment_register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_fragment_textinput_password"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_centerHorizontal="true"
+            android:text="Register"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:ems="10"
+            android:textColor="@color/text"
+            android:background="@color/colorPrimary"/>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">UKM101</string>
+    <string name="empty_string"> </string>
 
     <!--Strings related to Shared Preferences-->
     <string name="KEY_MAIN_SHARED_PREF">UKM101</string>
     <string name="KEY_PHONE">KEYPHONE</string>
     <string name="KEY_ISUSERLOGIN">KEYISUSERLOGIN</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
