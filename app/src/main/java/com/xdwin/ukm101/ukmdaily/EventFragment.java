@@ -56,6 +56,21 @@ public class EventFragment extends Fragment {
             model.setId(1);
             events.add(model);
         }
+
+        UKMDailyModel model2 = new UKMDailyModel();
+        model2.setTitle("Event: Gathering Pengusaha Kampus Batch 2 Cabang Depok");
+        model2.setImageURL("https://pbs.twimg.com/profile_images/628750297892962304/kopjkHnC.png");
+        model2.setId(2);
+        events.add(model2);
+
+        UKMDailyModel model3 = new UKMDailyModel();
+        model3.setTitle("Event: Female Entrepreneurship Cabang Jakarta Selatan");
+        model3.setImageURL("https://freeiconshop.com/files/edd/person-girl-flat.png");
+        model3.setId(2);
+        events.add(model3);
+
+
+        
         adapter = new UKMDailyLVAdapter(getContext(), events);
         adapter.notifyDataSetChanged();
         listView.setAdapter(adapter);

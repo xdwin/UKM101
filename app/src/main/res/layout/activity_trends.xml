@@ -74,7 +74,7 @@
                 android:layout_marginEnd="4dp"
                 android:textSize="12sp"
                 android:textColor="@color/white"
-                android:text="Jumlah like pada post anda di Facebook bertambah cukup pesat, hal ini diakibatkan oleh strategi marketing yang efektif" />
+                android:text="Telah dibuka sekolah baru di Jalan Raya Margonda, hal ini merupakan kesempatan yang tepat untuk menarik pengunjung" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
@@ -151,7 +151,66 @@
                 android:layout_marginEnd="4dp"
                 android:textSize="12sp"
                 android:textColor="@color/white"
-                android:text="Pemerintah kota Depok memperbaharui surat keputusan tentang penggunaan billboard pada Jalan Raya Margonda" />
+                android:text="Pemerintah kota Depok memperbaharui surat keputusan tentang penggunaan billboard pada Jalan Raya Margonda, saatnya anda melakukan review kembali tentang pemasangan billboard anda" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/trends_activity_card_view_4"
+        android:layout_below="@id/trends_activity_card_view_3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/trends_activity_on_marketing_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="Jumlah like pada post anda di Facebook bertambah cukup pesat, hal ini diakibatkan oleh strategi marketing yang efektif" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/trends_activity_card_view_5"
+        android:layout_below="@id/trends_activity_card_view_4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_light"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/trends_activity_on_marketing_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="Jumlah pengunjung pada website anda menurun dibandingkan dengan bulan lalu, saatnya untuk melancarkan strategi marketing baru" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
 </RelativeLayout>

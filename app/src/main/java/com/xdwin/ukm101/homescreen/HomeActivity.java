@@ -22,6 +22,7 @@ import android.widget.TextView;
 import com.xdwin.ukm101.R;
 import com.xdwin.ukm101.marketing.MarketingActivity;
 import com.xdwin.ukm101.miscellaneous.StatisticsActivity;
+import com.xdwin.ukm101.miscellaneous.TrendsActivity;
 import com.xdwin.ukm101.pembukuan.PembukuanActivity;
 import com.xdwin.ukm101.ukmdaily.UKMDailyActivity;
 
@@ -82,6 +83,12 @@ public class HomeActivity extends AppCompatActivity {
                     if (id == R.id.navigation_item_insight){
                         startActivity(new Intent(HomeActivity.this, StatisticsActivity.class));
                         drawerLayout.closeDrawers();
+                        return true;
+                    }
+                    else if(id == R.id.navigation_item_trends){
+                        startActivity(new Intent(HomeActivity.this, TrendsActivity.class));
+                        drawerLayout.closeDrawers();
+                        return true;
                     }
                     return false;
                 }
